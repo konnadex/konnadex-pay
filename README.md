@@ -11,7 +11,7 @@ Currently, anyone can use konnadex SDK via a simple hyperlink integration on a n
 Using CDN:
 
 ```js
-<script src="https://konnadex-pay.min.js"></script>
+<script src="https://index.min.js"></script>
 ```
 
 ### Example
@@ -94,7 +94,7 @@ Create an HTML file and paste this script below and get the bag.
   <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
-    <script src="konnadex-pay.min.js"></script>
+    <script src="./index.min.js"></script>
   </head>
 
   <body>
