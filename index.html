@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <script src="https:/v1.index.bundle.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      Try Konnadex Pay
+      <button id="button">Pay</button>
+    </div>
+    <script>
+      const pay = new KonnadexCheckout({
+        key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1",
+        reference: "test-test-ref",
+        email: "",
+        name: "",
+        env: "PRODUCTION",
+        currency: "NGN",
+        amount: "2000.42",
+        onSuccess: success,
+        onError: error,
+        onClose,
+      });
+
+      function success(data) {
+        console.log(data);
+      }
+
+      function error(data) {
+        console.log(data);
+      }
+
+      function onClose(data) {
+        console.log(data);
+      }
+      const button = document.querySelector("#button");
+
+      button.addEventListener("click", function () {
+        pay.initializePay();
+      });
+    </script>
+  </body>
+</html>
