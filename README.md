@@ -24,11 +24,15 @@ After the konnadex script has been loaded, a global `konnadexCheckout` object is
 const pay = new KonnadexCheckout({
   key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1",
   reference: "test-test-ref",
-  email: "",
-  name: "",
   env: "PRODUCTION",
   currency: "NGN",
   amount: "2000.42",
+  metadata: {
+    email: "jd@doe.com",
+    fullname: "John Doe",
+    description:"",
+    phone: ""
+  },
   onSuccess: success,
   onError: error,
   onClose,
