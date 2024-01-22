@@ -14,12 +14,16 @@
     <script>
       const pay = new KonnadexCheckout({
         key: "KDX_PUBK_TEST_9juOiNz3pYQUax0vB5wudw+HpjSZttKUIyfZh/7xQZWiPbI",
-        reference: "test-test-ref59",
-        email: "jd@doe.com",
-        name: "John Doe",
+        reference: "test-test-ref60",
         env: "DEVELOPMENT",
         currency: "NGN",
         amount: "1056020.50",
+        metadata: {
+          email: "jd@doe.com",
+          fullname: "John Doe",
+          description:"",
+          phone: ""
+        },
         onSuccess: success,
         onError: error,
         onClose,
