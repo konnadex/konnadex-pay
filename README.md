@@ -114,7 +114,7 @@ Create an HTML file and paste this script below and get the bag.
       const pay = new KonnadexCheckout({
         key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1",
         reference: "test-test-ref",
-              metadata: {
+        metadata: {
           email: "jd@doe.com",
           fullname: "John Doe",
           description:"",
