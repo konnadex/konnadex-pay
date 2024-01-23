@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
-    <script src="https://cdn.jsdelivr.net/gh/konnadex/konnadex-pay@main/index.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/konnadex/konnadex-pay@main/index.min.js"></script> -->
+    <script src="./index.min.js" ></script>
   </head>
 
   <body>
@@ -13,16 +14,16 @@
     </div>
     <script>
       const pay = new KonnadexCheckout({
-        key: "KDX_PUBK_TEST_9juOiNz3pYQUax0vB5wudw+HpjSZttKUIyfZh/7xQZWiPbI",
-        reference: "test-test-ref60",
+        key: "KDX_PUBK_TEST_9juOiNz3pYQUax0vB5wudw+HpjSZttKUIyfZh/7xQZWi",
+        reference: "test-test-ref6133724",
+        theme: 'dark',
         env: "DEVELOPMENT",
         currency: "NGN",
-        amount: "1056020.50",
+        amount: "10560.50",
         metadata: {
           email: "jd@doe.com",
           fullname: "John Doe",
           description:"",
-          phone: ""
         },
         onSuccess: success,
         onError: error,
