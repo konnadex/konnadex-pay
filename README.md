@@ -33,6 +33,7 @@ const pay = new KonnadexCheckout({
     description:"",
     phone: ""
   },
+  theme: 'light',
   onSuccess: success,
   onError: error,
   onClose,
@@ -55,8 +56,13 @@ konnadex is initialized with a configuration object which is required to setup a
 {
   key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1",
   reference: "test-test-ref",//unique
-  email: "",
-  name: "",
+  metadata: {
+    email: "jd@doe.com",
+    fullname: "John Doe",
+    description:"",
+    phone: ""
+     },
+   theme: 'light',
   env:"PRODUCTION",
   currency: "NGN",
   amount: "2000.42",
@@ -116,6 +122,7 @@ Create an HTML file and paste this script below and get the bag.
         description:"",
         phone: ""
       },
+        theme: 'light || Dark',
         env: "PRODUCTION",
         currency: "NGN",
         amount: "2000.42",
