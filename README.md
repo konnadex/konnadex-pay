@@ -99,6 +99,7 @@ Create an HTML file and paste this script below and get the bag.
 
 ```html
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <html>
   <head>
     <meta charset="utf-8" />
