@@ -4,27 +4,39 @@
   <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.jsdelivr.net/gh/konnadex/konnadex-pay@main/index.min.js"></script>
-    <!-- <script src="./index.min.js" ></script> -->
+    <!-- <script src="./index.min.js"></script> -->
   </head>
 
   <body>
-    <div id="wrapper">
-      Try Konnadex Pay
-      <button id="button">Pay</button>
+    <div
+      id="wrapper"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      "
+    >
+      <h4>Konnadex Checkout Demo</h4>
+      <div>
+        <button style="width: 100px;height: 40px;background: gray;" id="button">Pay</button>
+      </div>
     </div>
     <script>
       const pay = new KonnadexCheckout({
-        key: "KDX_PUBK_TEST_9juOiNz3pYQUax0vB5wudw+HpjSZttKUIyfZh/7xQZWiPbI1",
-        reference: "test-test-ref6133724",
-        theme: 'dark',
+        key: "KDX_PUBK_TEST_9juOiNz3pYQUax0vB5wudw+HpjSZttKUIyfZh/7xQZWiPbI",
+        reference: "te55323er4eeer23wew34e724",
+        theme: "light",
         env: "DEVELOPMENT",
         currency: "NGN",
         amount: "10560.50",
         metadata: {
           email: "jd@doe.com",
           fullname: "John Doe",
-          description:"",
+          description: "",
         },
         onSuccess: success,
         onError: error,
