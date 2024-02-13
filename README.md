@@ -122,7 +122,7 @@ Create an HTML file and paste this script below and get the bag.
           description:"",
         },
         theme: 'light',
-        env: "PRODUCTION",
+        env: "PRODUCTION || DEVELOPMENT",
         currency: "NGN",
         amount: "2000.42",
         onSuccess: success,
