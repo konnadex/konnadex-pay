@@ -114,15 +114,15 @@ Create an HTML file and paste this script below and get the bag.
     </div>
     <script>
       const pay = new KonnadexCheckout({
-        key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1",
-        reference: "test-test-ref",
+        key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1", //Get a public key from your konnadex dashboard
+        reference: "test-test-ref",//Use your actual reference key 
          metadata: {
           email: "jd@doe.com",
           fullname: "John Doe",
           description:"",
         },
-        theme: 'light',
-        env: "PRODUCTION || DEVELOPMENT",
+        theme: 'light', // this supports "light" or "dark" themes
+        env: "DEVELOPMENT",// this supports "DEVELOPMENT" or "PRODUCTION"
         currency: "NGN",
         amount: "2000.42",
         onSuccess: success,
