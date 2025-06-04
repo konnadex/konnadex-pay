@@ -22,9 +22,9 @@ After the konnadex script has been loaded, a global `konnadexCheckout` object is
 
 ```js
 const pay = new KonnadexCheckout({
-  key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1", // Use your konnadex key
-  reference: String(Math.round(new Date()/1000)), // Use your actual payment reference code
-  env: "DEVELOPMENT", // this supports "DEVELOPMENT" or "PRODUCTION"
+  key: "KDX_PUBK_TEST_9juOi233pYQUax0vB5wudw+H32SZttKUIyfZh/7xQZWiPbI1",
+  reference: "test-test-ref",
+  env: "PRODUCTION",
   currency: "NGN",
   amount: "2000.42",
   theme: 'light',
@@ -34,9 +34,9 @@ const pay = new KonnadexCheckout({
     description:"",
     phone: ""
   },
-  onSuccess: ()=>{},
-  onError: ()=>{},
-  onClose: ()=>{},
+  onSuccess: success,
+  onError: error,
+  onClose,
 });
 ```
 
