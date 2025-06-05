@@ -22,17 +22,24 @@
     >
       <h4>Konnadex Checkout Demo</h4>
       <div>
-        <button style="width: 100px;height: 40px;background: gray;" id="button">Pay</button>
+        <button
+          style="width: 100px; height: 40px; background: gray"
+          id="button"
+        >
+          Pay
+        </button>
       </div>
     </div>
     <script>
       const pay = new KonnadexCheckout({
-        key: "KDX_PUBK_TEST_9juOiNz3pYQUax0vB5wudw+HpjSZttKUIyfZh/7xQZWiPbI",
-        reference: "te55323er4eeer23wew34e724",
+        key: "KDX_PK_TEST_7hdmUZ/yMWp/X7hqmLHjdhiDPi0lM9LWvL6zuxu0ZTt5Zp",
+        reference: "39e43232334sd242",
         theme: "light",
         env: "DEVELOPMENT",
         currency: "NGN",
         amount: "10560.50",
+        cryptoCurrency: "CNGN",
+        defaultTab: "contract", // contract | transfer,
         metadata: {
           email: "jd@doe.com",
           fullname: "John Doe",
