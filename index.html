@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Getting Started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.jsdelivr.net/gh/konnadex/konnadex-pay@main/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/konnadex/konnadex-pay@main/index.min.js?v=<?= Date.now() ?>"></script>
     <!-- <script src="./index.min.js"></script> -->
   </head>
 
@@ -32,16 +32,16 @@
     </div>
     <script>
       const pay = new KonnadexCheckout({
-        key: "KDX_PK_TEST_7hdmUZ/yMWp/X7hqmLHjdhiDPi0lM9LWvL6zuxu0ZTt5Zp",
-        reference: "39e43232334sd242",
+        key: "KDX_PK_TEST_7hdmUZ/yMWp/X7hqmLHjdhiDPi0lM9LWvL6zuxu0ZTt5ZplF",
+        reference: "39234435234432sd242",
         theme: "light",
         env: "DEVELOPMENT",
         currency: "NGN",
-        amount: "10560.50",
+        amount: "1.02",
         cryptoCurrency: "CNGN",
-        defaultTab: "contract", // contract | transfer,
+        defaultTab: "transfer", // contract | transfer,
         metadata: {
-          email: "jd@doe.com",
+          email: "ugdesmond+livinustest@gmail.com",
           fullname: "John Doe",
           description: "",
         },

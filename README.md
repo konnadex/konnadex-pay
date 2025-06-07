@@ -65,7 +65,9 @@ konnadex is initialized with a configuration object which is required to setup a
   env:"PRODUCTION",
   currency: "NGN",
   amount: "2000.42",
-
+  network: "BINANCE", // optional[default: BINANCE]
+  cryptoCurrency: "USDT", // USDT | CNGN
+  defaultTab: "contract", // contract | transfer 
   // `onSuccess` callBack function on transaction successful
   onSuccess: function(transactionData){}, // no-default, optional, function
 
@@ -83,14 +85,13 @@ konnadex is initialized with a configuration object which is required to setup a
 
 ### Supported Networks and token
 
-| Network             | ChainId | USDT 
-| ------------------- | ------- | ---- |
-| Ethereum            | 1       |  ✅  |
-| Binance Smart Chain | 56      |  ✅  |
-| Polygon Mainnet     | 137     |  ✅  |
-| Mumbai              | 80001   |  ✅  |
-| BSC Testnet         | 97      |  ✅  |
-| Goerli Testnet      | 5       |  ✅  |
+| Network             | ChainId | USDT | cNGN|
+| ------------------- | ------- | ---- |-----|
+| Ethereum            | 1       |  ❌  | ❌   |
+| Binance Smart Chain | 56      |  ✅  | ✅  |
+| Polygon Mainnet     | 137     |  ✅  | ✅  |
+| Mumbai              | 80001   |  ✅  | ✅  |
+| BSC Testnet         | 97      |  ✅  | ✅  |
 
 
 ### Full Example
