@@ -33,11 +33,13 @@
     <script>
       const pay = new KonnadexCheckout({
         key: "KDX_PK_TEST_7hdmUZ/yMWp/X7hqmLHjdhiDPi0lM9LWvL6zuxu0ZTt5ZplF",
-        reference: "39234213434432sd242",
+        reference:
+          Math.random().toString(36).substring(2, 15) +
+          Math.random().toString(36).substring(2, 15),
         theme: "light",
         env: "DEVELOPMENT",
         currency: "NGN",
-        amount: "1.02",
+        amount: "1.11",
         network: "ASSETCHAIN",
         cryptoCurrency: "CNGN",
         defaultTab: "transfer", // contract | transfer,
@@ -70,3 +72,4 @@
     </script>
   </body>
 </html>
+0x167a7F565b553435f7DFF6AfA406574215BA4efA
